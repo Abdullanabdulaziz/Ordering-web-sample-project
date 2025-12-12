@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Order</title>
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <header class="site-header small">
+    <div class="logo-wrap">
+      <img src="assets/Me.jpeg" alt="logo" class="logo small" />
+      <h1 class="site-title">Order</h1>
+    </div>
+    <div class="header-actions">
+      <a class="btn" href="services.html">Back to Services</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="order-card">
+      <h2 id="homeTitle">Home</h2>
+      <p id="userSummary">No user info saved. Please login from the main page or fill the form below.</p>
+
+      <form id="orderForm" class="form-grid">
+        <label>
+          Name
+          <input type="text" id="name" placeholder="Your name" />
+        </label>
+
+        <label>
+          Phone
+          <input type="tel" id="phone" placeholder="e.g. +2010..." />
+        </label>
+
+        <label>
+          Email
+          <input type="email" id="email" placeholder="you@example.com" />
+        </label>
+
+        <label class="full">
+          <input type="checkbox" id="billOther" />
+          Bill made by someone else
+        </label>
+
+        <div class="form-actions full">
+          <button type="submit" class="btn">Submit</button>
+          <button type="button" id="clearOrder" class="btn ghost">Clear</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>

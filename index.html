@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Welcome to our Website</title>
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo-wrap">
+      <img src="assets/Me.jpeg" alt="logo" class="logo" id="logoImg" />
+      <h1 class="site-title">Welcome to our Website</h1>
+    </div>
+
+    <div class="header-actions">
+      <button id="loginBtn" class="btn">Login</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="services-intro">
+      <h2>Services <button id="liftBtn" class="btn small">Lift</button></h2>
+      <p>We offer focused, modern web solutions tailored to you.</p>
+      <p><a class="btn" href="services.html">Go to Services</a></p>
+    </section>
+  </main>
+
+  <!-- Simple login modal -->
+  <div class="modal" id="loginModal" aria-hidden="true">
+    <div class="modal-content">
+      <button class="close" id="closeLogin">&times;</button>
+      <h3>Login / Save your info</h3>
+      <form id="loginForm">
+        <label>
+          Name
+          <input type="text" id="loginName" required />
+        </label>
+        <label>
+          Phone
+          <input type="tel" id="loginPhone" />
+        </label>
+        <label>
+          Email
+          <input type="email" id="loginEmail" />
+        </label>
+        <div class="modal-actions">
+          <button type="submit" class="btn">Save</button>
+          <button type="button" class="btn ghost" id="clearLogin">Clear</button>
+        </div>
+      </form>
+      <p class="note">Saved info will be stored in your browser localStorage.</p>
+    </div>
+  </div>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>

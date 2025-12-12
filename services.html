@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Services</title>
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <header class="site-header small">
+    <div class="logo-wrap">
+      <img src="assets/Me.jpeg" alt="logo" class="logo small" />
+      <h1 class="site-title">Services</h1>
+    </div>
+    <div class="header-actions">
+      <a class="btn" href="index.html">Home</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="services-list">
+      <h2>Services</h2>
+      <ul>
+        <li>Web Development</li>
+        <li>SEO</li>
+      </ul>
+
+      <div style="margin-top:20px;">
+        <button id="orderBtn" class="btn">Order</button>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    document.getElementById('orderBtn').addEventListener('click', () => {
+      // Per task: clicking Order should go to a home page containing name/phone/email
+      window.location.href = 'order.html';
+    });
+  </script>
+</body>
+</html>
